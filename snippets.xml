@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+    <snippet group="C++" trigger="ulog" id="" complement="" removed="false" modified="false">UE_LOG(LogTemp, Warning, TEXT(&quot;$text$&quot;))</snippet>
+    <snippet group="C++" trigger="ustruct" id="" complement="" removed="false" modified="false">USTRUCT()
+struct F$name$
+{
+	GENERATED_USTRUCT_BODY()
+
+	$$
+};</snippet>
+    <snippet group="C++" trigger="utrace" id="" complement="" removed="false" modified="false">FCollisionQueryParams TraceParams(NAME_None, /*TraceComplex*/ true, /*IgnoreActor*/ this);
+FCollisionObjectQueryParams CollisionParams(ECC_WorldDynamic);
+
+FHitResult OutHit;
+const bool bHit = World-&gt;LineTraceSingle(OutHit, StartPos, EndPos, TraceParams, CollisionParams);
+if (bHit)
+{
+        // OutHit Contains Hit Data...
+}</snippet>
+</snippets>
